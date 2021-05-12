@@ -31,7 +31,7 @@ function AddUser() {
         <h2>Contact</h2>
 
         <form onSubmit={onhandleSubmit}>
-          <label for="name">Name</label>
+          <label>Name</label>
           <input
             type="text"
             id="name"
@@ -42,7 +42,7 @@ function AddUser() {
             onChange={(e) => setName(e.target.value)}
           />
 
-          <label for="email">Email</label>
+          <label>Email</label>
           <input
             type="text"
             id="email"
@@ -53,7 +53,7 @@ function AddUser() {
             onChange={(e) => setEmail(e.target.value)}
           />
 
-          <label for="phone">Phone</label>
+          <label>Phone</label>
           <input
             type="text"
             id="phone"
@@ -64,7 +64,7 @@ function AddUser() {
             onChange={(e) => setPhone(e.target.value)}
           />
 
-          <label for="address">Address</label>
+          <label>Address</label>
           <input
             type="text"
             id="address"

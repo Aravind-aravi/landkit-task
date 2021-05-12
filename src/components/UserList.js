@@ -20,20 +20,24 @@ function UserList() {
       <h2>List of Users</h2>
       <div style={{ overflowX: "auto" }}>
         <table id="customers">
-          <tr>
-            <th>Name</th>
-            <th>Username</th>
-            <th>Email</th>
-          </tr>
-          {Users.map((d) => {
-            return (
-              <tr key={d.id}>
-                <td>{d.name}</td>
-                <td>{d.username}</td>
-                <td>{d.email}</td>
-              </tr>
-            );
-          })}
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Username</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            {Users.map((d) => {
+              return (
+                <tr key={d.id}>
+                  <td>{d.name}</td>
+                  <td>{d.username}</td>
+                  <td>{d.email}</td>
+                </tr>
+              );
+            })}
+          </tbody>
         </table>
       </div>
     </div>
